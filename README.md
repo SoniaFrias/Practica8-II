@@ -6,22 +6,22 @@ Práctica 8 de Interfaces Inteligentes
 * **ALU** alu0101492513@ull.edu.es
 * **Versión de Unity:** 6.6
 
-El objetivo de la práctica es construir una aplicación de RA con Unity utilizando AR Foundation-AR Core ampliando la funcionalidad del proyecto de ejemplo de Google. Consiste en un juego simple donde el usuario controla un coche que recoje regalos.
+El objetivo de la práctica es construir una aplicación de RA con Unity utilizando AR Foundation-AR Core ampliando la funcionalidad del proyecto de ejemplo de Google. Consiste en un juego simple donde el usuario controla un coche que recoge regalos.
 
 # Tutorial
 Se ha seguido las instrucciones detalladas de la guia de Google [AR Foundation - AR Core](https://codelabs.developers.google.com/arcore-unity-ar-foundation#1).
 
-Primero se ha creado un proyecto vacio con la plantilla Universal Render Pipeline. Luego se han instalado directamente desde Unity Registry los paquetes necesarios: `AR Foundation` y `Google ARCore XR Plugin` y se ha importado el paquete `starter-package.unitypackage`. A continuación, se ha configurado la compilación del proyecto para Android, utilizando la escena de ejemplo y añadiendo el pluggin.
+Primero se ha creado un proyecto vacio con la plantilla Universal Render Pipeline. Luego se han instalado directamente desde Unity Registry los paquetes necesarios: `AR Foundation` y `Google ARCore XR Plugin` y se ha importado el paquete `starter-package.unitypackage`. A continuación, se ha configurado la compilación del proyecto para Android, utilizando la escena de ejemplo y añadiendo el plugin.
 
 1. Configuración de la cámara
 
-Tras la configuración inicial, se pasa a la creación de la escena añadiendo el AR Session y AR Session Origin. Este último ya no existe componente en la versión actual de Unity, por lo que en su lugar se crea un objeto vacio y creamos una cámara como hija añadiendole los componentes que se describen en el tutorial. 
+Tras la configuración inicial, se pasa a la creación de la escena añadiendo el AR Session y AR Session Origin. Este último componente ya no existe en la versión actual de Unity, por lo que en su lugar se crea un objeto vacío y creamos una cámara como hija añadiendole los componentes que se describen en el tutorial. 
 
 2. Detección de planos
 
 * Se agrega el componente ARPlaneManager y lo configura estableciendo el campo Plane Prefab.
-* Se Agrega un componente ARRaycastManager 
-* Agrega un componente de DrivingSurfaceManager: permite seleccionar un plano. Una vez que se selecciona un ARPlane, se ocultan todos los demás planos y se inhabilitan los planos nuevos.
+* Se agrega un componente ARRaycastManager 
+* Se agrega un componente de DrivingSurfaceManager: permite seleccionar un plano. Una vez que se selecciona un ARPlane, se ocultan todos los demás planos y se inhabilitan los planos nuevos.
 
 3. Posicionamiento de la retícula y movimiento del coche
 
