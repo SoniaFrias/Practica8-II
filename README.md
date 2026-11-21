@@ -56,4 +56,4 @@ Si el juego tuviera mecánicas más complejas sería conveniente separar el comp
 
 APK con el ejemplo: [apk1](apks/RAprueba6.apk)
 
-APK con la adaptación: [apk2](apks/RAprueba.apk)
+APK con la adaptación: [apk2](apks/RAprueba10.apk)
